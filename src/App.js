@@ -33,15 +33,8 @@ const App = () => {
         />
       </div>
       <div className="cryptoDisplay">
-        {filteredCoins.map((coin) => {
-          return (
-            <Coin
-              name={coin.name}
-              icon={coin.icon}
-              price={coin.price}
-              symbol={coin.symbol}
-            />
-          );
+        {filteredCoins.map((coins) => {
+          return <Coin coins={coins} />;
         })}
       </div>
     </div>

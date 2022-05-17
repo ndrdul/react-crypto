@@ -1,12 +1,12 @@
 import React from "react";
 
-const Coin = ({ name, icon, price, symbol }) => {
+const Coin = ({ coins }) => {
   return (
     <div className="coin">
-      <h1> Name: {name}</h1>
-      <img src={icon} />
-      <h3> Price: {price}</h3>
-      <h3> Symbol: {symbol}</h3>
+      <img src={coins.icon} />
+      <h3>Rank {coins.rank}</h3>
+      <h3> Price: {coins.price}</h3>
+      <h3> {coins.symbol}</h3>
     </div>
   );
 };
